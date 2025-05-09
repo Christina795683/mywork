@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft 中国官网</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Minecraft', sans-serif;
+        }
+
+        body {
+          /* 背景颜色 */
+            background: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Minecraft 像素字体 */
+        @font-face {
+            font-family: 'Minecraft';
+            src: url('https://fonts.cdnfonts.com/s/14512/Minecraft.woff') format('woff');
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 导航样式 */
+        nav {
+            background: #3b8526;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 4px solid #5d5d5d;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 2rem;
+            font-size: 1.2rem;
+        }
+
+        /* 内容区块 */
+        .section {
+            background: #4a4a4a;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 3px solid #666;
+            box-shadow: 4px 4px 0 #222;
+        }
+
+        h2 {
+            color: #3b8526;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            text-shadow: 2px 2px #000;
+        }
+
+        ul {
+            list-style: none;
+            columns: 2;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        li:before {
+            content: "■";
+            color: #3b8526;
+            position: absolute;
+            left: 0;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background: #2d2d2d;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            border-top: 4px solid #5d5d5d;
+        }
+
+        .esrb-rating {
+            background: #000;
+            padding: 10px;
+            display: inline-block;
+            margin: 1rem 0;
+            border: 2px solid #fff;
+        }
+
+        /* 价格标签 */
+        .price-tag {
+            background: #3b8526;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            ul {
+                columns: 1;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <a href="#游戏">游戏</a>
+        <a href="#社区">社区</a>
+        <a href="#商店">商店</a>
+        <a href="#支持">支持</a>
+        <a href="#帐户">帐户</a>
+    </nav>
+
+    <div class="container">
+        <section class="section" id="游戏">
+            <h2>游戏</h2>
+            <img src="images/Mojang2020Logo.png" alt="Roaster of the Year award">
+            <ul>
+                <li>Minecraft</li>
+                <li>Minecraft Dungeons</li>
+                <li>Minecraft Legends</li>
+                <li>Minecraft Education</li>
+            </ul>
+        </section>
+
+        <section class="section" id="社区">
+            <h2>社区</h2>
+            <ul>
+                <li>创建数字可为“J”</li>
+                <li>Making Studios 搭建的社群</li>
+                <li>创建更美好的世界</li>
+                <li>Minecraft 大电影</li>
+            </ul>
+        </section>
+
+        <section class="section" id="商店">
+            <h2>商店</h2>
+            <ul>
+                <li>Minecraft 商店</li>
+            </ul>
+        </section>
+
+        <section class="section" id="支持">
+            <h2>支持</h2>
+            <ul>
+                <li>新手建议</li>
+                <li>切换与帮助</li>
+                <li>活动</li>
+                <li>网站地图</li>
+                <li>下载</li>
+                <li>联系我们</li>
+            </ul>
+        </section>
+
+        <section class="section" id="帐户">
+            <h2>帐户</h2>
+            <ul>
+                <li>帐篷</li>
+                <li>兑换</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Mojang AB, TM Microsoft Corporation.<br>
+            Minecraft 用语指南 | 密码登录</p>
+            
+            <div class="esrb-rating">
+                <div class="price-tag">US$ 1.10</div>
+                <p>Fantasy Violence</p>
+                <p>In-Game Purchases / Users Interest<br>
+                Online Music Net Rated by the ESRB</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
