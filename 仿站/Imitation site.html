@@ -1,195 +1,147 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft 中国官网</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Minecraft', sans-serif;
-        }
-
-        body {
-          /* 背景颜色 */
-            background: #000000;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        /* Minecraft 像素字体 */
-        @font-face {
-            font-family: 'Minecraft';
-            src: url('https://fonts.cdnfonts.com/s/14512/Minecraft.woff') format('woff');
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* 导航样式 */
-        nav {
-            background: #3b8526;
-            padding: 1rem;
-            margin-bottom: 2rem;
-            border-bottom: 4px solid #5d5d5d;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 2rem;
-            font-size: 1.2rem;
-        }
-
-        /* 内容区块 */
-        .section {
-            background: #4a4a4a;
-            padding: 20px;
-            margin-bottom: 25px;
-            border: 3px solid #666;
-            box-shadow: 4px 4px 0 #222;
-        }
-
-        h2 {
-            color: #3b8526;
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-            text-shadow: 2px 2px #000;
-        }
-
-        ul {
-            list-style: none;
-            columns: 2;
-        }
-
-        li {
-            margin-bottom: 0.8rem;
-            padding-left: 1.2rem;
-            position: relative;
-        }
-
-        li:before {
-            content: "■";
-            color: #3b8526;
-            position: absolute;
-            left: 0;
-        }
-
-        /* 页脚样式 */
-        footer {
-            background: #2d2d2d;
-            padding: 2rem;
-            text-align: center;
-            margin-top: 3rem;
-            border-top: 4px solid #5d5d5d;
-        }
-
-        .esrb-rating {
-            background: #000;
-            padding: 10px;
-            display: inline-block;
-            margin: 1rem 0;
-            border: 2px solid #fff;
-        }
-
-        /* 价格标签 */
-        .price-tag {
-            background: #3b8526;
-            padding: 5px 10px;
-            border-radius: 3px;
-            font-weight: bold;
-            display: inline-block;
-            margin: 10px 0;
-        }
-
-        /* 响应式设计 */
-        @media (max-width: 768px) {
-            ul {
-                columns: 1;
-            }
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-        }
-    </style>
+    <title>仿Minecraft页面</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav class="container">
-        <a href="#游戏">游戏</a>
-        <a href="#社区">社区</a>
-        <a href="#商店">商店</a>
-        <a href="#支持">支持</a>
-        <a href="#帐户">帐户</a>
-    </nav>
+    <div class="header">
+        <p style="color: white;">FOLLOW MINECRAFT</p>
+        <ul class="social-icons">
+            <!-- 移除文件名中的空格 -->
+            <li><a href="https://www.youtube.com/minecraft" 
+   aria-label="YouTube 上的 Minecraft" 
+   title="YouTube 上的 Minecraft" 
+   data-aem-contentname="socialshare-action" 
+   target="_blank" 
+   class="MC_globalFooterA_socialStripe-icon" 
+   role="link" 
+   style="--fill-color: #fa0020; transition: all 0.3s ease;"
+   data-bi-id="n1m1r1a2" 
+   data-bi-ct="text" 
+   data-bi-cn="socialshare-action" 
+   data-bi-ecn="socialshare-action" 
+   data-bi-socchn="youtube" 
+   data-bi-bhvr="SOCIALLIKE">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" role="presentation">
+        <rect width="40" height="40" rx="20" fill="#262423" style="transition: fill 0.3s ease;"></rect>
+        <path fill-rule="evenodd" clip-rule="evenodd" 
+              d="M29.3904 12.4894C30.4184 12.7529 31.229 13.5247 31.5058 14.5035C32.0198 16.2918 32 20.0188 32 20.0188C32 20.0188 32 23.7271 31.5058 25.5153C31.229 26.4941 30.4184 27.2659 29.3904 27.5294C27.5123 28 20 28 20 28C20 28 12.5074 28 10.6096 27.5106C9.58155 27.2471 8.771 26.4753 8.49423 25.4965C8 23.7271 8 20 8 20C8 20 8 16.2918 8.49423 14.5035C8.771 13.5247 9.60132 12.7341 10.6096 12.4706C12.4876 12 20 12 20 12C20 12 27.5123 12 29.3904 12.4894ZM23.855 20.0001L17.6079 23.426V16.5742L23.855 20.0001Z" 
+              fill="white" style="transition: fill 0.3s ease;"></path>
+    </svg>
+</a>
 
-    <div class="container">
-        <section class="section" id="游戏">
-            <h2>游戏</h2>
-            <img src="images/Mojang2020Logo.png" alt="Roaster of the Year award">
-            <ul>
-                <li>Minecraft</li>
-                <li>Minecraft Dungeons</li>
-                <li>Minecraft Legends</li>
-                <li>Minecraft Education</li>
-            </ul>
-        </section>
+<style>
+.MC_globalFooterA_socialStripe-icon:hover rect,
+.MC_globalFooterA_socialStripe-icon:focus rect {
+    fill: #fa0020; /* YouTube品牌红色 */
+}
+.MC_globalFooterA_socialStripe-icon:focus {
+    outline: none; /* 移除默认焦点框 */
+}
+</style>    </li>   
+            <li><img src="instagram-icon.png" alt="Instagram"></li>
+            <li><img src="facebook-icon.png" alt="Facebook"></li>
+            <li><img src="twitter-icon.png" alt="Twitter"></li>
+            <li><img src="tiktok-icon.png" alt="TikTok"></li>
+            <li><img src="whatsapp-icon.png" alt="WhatsApp"></li>
+            <li><a href="https://discord.gg/minecraft" 
+   aria-label="Discord 上的 Minecraft" 
+   title="Discord 上的 Minecraft" 
+   data-aem-contentname="socialshare-action" 
+   target="_blank" 
+   class="MC_globalFooterA_socialStripe-icon" 
+   role="link" 
+   style="--fill-color: #5865F2; transition: all 0.3s ease;"
+   data-bi-id="n7m1r1a2" 
+   data-bi-ct="text" 
+   data-bi-cn="socialshare-action" 
+   data-bi-ecn="socialshare-action" 
+   data-bi-socchn="discord" 
+   data-bi-bhvr="SOCIALLIKE">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" role="presentation">
+        <rect width="40" height="40" rx="20" fill="#262423" style="transition: fill 0.3s ease;"></rect>
+        <g id="_图层_2">
+            <g id="Discord_Logos">
+                <g id="Discord_Logo_-_Large_-_White">
+                    <path d="M29.02,11.8c-1.72-.78-3.52-1.33-5.36-1.66-.25.45-.49.92-.7,1.39-1.96-.31-3.99-.31-5.95,0-.2-.47-.43-.94-.7-1.39-1.86.31-3.66.88-5.36,1.66-3.4,5.03-4.32,9.92-3.85,14.75h0c1.98,1.47,4.19,2.6,6.57,3.31.53-.72,1-1.47,1.41-2.27-.78-.29-1.51-.63-2.23-1.06.18-.14.37-.27.55-.41,4.17,1.96,9,1.96,13.15,0,.18.14.37.29.55.41-.72.41-1.45.78-2.23,1.06.41.8.88,1.55,1.41,2.27,2.37-.72,4.6-1.84,6.59-3.29h0c.53-5.6-.92-10.45-3.87-14.77ZM15.67,23.58c-1.29,0-2.35-1.17-2.35-2.6s1.02-2.6,2.33-2.6,2.37,1.17,2.35,2.6-1.02,2.6-2.33,2.6ZM24.32,23.58c-1.29,0-2.33-1.17-2.33-2.6s1.02-2.6,2.33-2.6,2.35,1.17,2.33,2.6-1.02,2.6-2.33,2.6Z" 
+                          fill="white" style="transition: fill 0.3s ease;"></path>
+                </g>
+            </g>
+        </g>
+    </svg>
+</a>
 
-        <section class="section" id="社区">
-            <h2>社区</h2>
-            <ul>
-                <li>创建数字可为“J”</li>
-                <li>Making Studios 搭建的社群</li>
-                <li>创建更美好的世界</li>
-                <li>Minecraft 大电影</li>
-            </ul>
-        </section>
-
-        <section class="section" id="商店">
-            <h2>商店</h2>
-            <ul>
-                <li>Minecraft 商店</li>
-            </ul>
-        </section>
-
-        <section class="section" id="支持">
-            <h2>支持</h2>
-            <ul>
-                <li>新手建议</li>
-                <li>切换与帮助</li>
-                <li>活动</li>
-                <li>网站地图</li>
-                <li>下载</li>
-                <li>联系我们</li>
-            </ul>
-        </section>
-
-        <section class="section" id="帐户">
-            <h2>帐户</h2>
-            <ul>
-                <li>帐篷</li>
-                <li>兑换</li>
-            </ul>
-        </section>
+<style>
+.MC_globalFooterA_socialStripe-icon:hover rect,
+.MC_globalFooterA_socialStripe-icon:focus rect {
+    fill: #5865F2; /* Discord品牌蓝 */
+}
+.MC_globalFooterA_socialStripe-icon:hover .discord-icon,
+.MC_globalFooterA_socialStripe-icon:focus .discord-icon {
+    fill: white; /* 确保图标保持白色 */
+}
+.MC_globalFooterA_socialStripe-icon:focus {
+    outline: none; /* 移除默认焦点框 */
+}
+</style></li>
+        </ul>
     </div>
-
-    <footer>
-        <div class="container">
-            <p>© 2023 Mojang AB, TM Microsoft Corporation.<br>
-            Minecraft 用语指南 | 密码登录</p>
-            
-            <div class="esrb-rating">
-                <div class="price-tag">US$ 1.10</div>
-                <p>Fantasy Violence</p>
-                <p>In-Game Purchases / Users Interest<br>
-                Online Music Net Rated by the ESRB</p>
+    <div class="main-content">
+        <div class="left-section">
+            <!-- 移除图片链接中的空格 -->
+            <img src="images/Mojang2020Logo.png" alt="Mojang Studios" style="width: 100px; height: 100px;">
+            <!-- 移除文件名中的空格 -->
+            <img src="images/Logo_Xbox_Game_Studio_png.png" alt="Xbox Game Studios" style="width: 200px; height: 100px;">
+        </div>
+        <div class="middle-section">
+            <div class="column">
+                <p>Games</p>
+                <p>Minecraft</p>
+                <p>Minecraft Dungeons</p>
+                <p>Minecraft Legends</p>
+                <p>Minecraft Education</p>
+                <p>Community</p>
+                <p>Community</p>
+                <p>Creator Learning Portal</p>
+                <p>Mojang Studios Careers</p>
+                <p>Build a Better World</p>
+                <p>A Minecraft Movie</p>
+            </div>
+            <div class="column">
+                <p>Shop</p>
+                <p>Marketplace</p>
+                <p>Minecraft Shop</p>
+                <p>Support</p>
+                <p>Tips for Beginners</p>
+                <p>Help</p>
+                <p>Feedback</p>
+                <li data-bi-id="c3c2c2m2r2a2" data-bi-cn="c3c2c2m2r2a2">
+                  <a href="https://feedback.minecraft.net" aria-label="Feedback" data-aem-contentname="navlist-action" target="_self" data-bi-id="n1c3c2c2m2r2a2" data-bi-ct="text" data-bi-cn="navlist-action" data-bi-ecn="navlist-action">
+                      Feedback
+                  </a>
+              </li>
+                <p>Site Map</p>
+                <p>Download</p>
+                <p>Contact us</p>
+                <p>Account</p>
+                <p>Profile</p>
+                <p>Redeem</p>
             </div>
         </div>
-    </footer>
+        <div class="right-section">
+            <!-- 移除图片链接中的空格 -->
+            <img src="images/esrb_2021_png.png" alt="ESRB Rating">
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 Mojang AB, TM Microsoft Corporation.</p>
+        <p>Minecraft Usage Guidelines </p>
+    </div>
 </body>
+
 </html>
