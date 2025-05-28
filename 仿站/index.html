@@ -1,25 +1,144 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Head First Lounge</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switcher</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .language-container {
+            margin-bottom: 15px;
+        }
+
+        .language-btn {
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .language-list {
+            display: none;
+            list-style: none;
+            background-color: #333;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 4px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+
+        .language-list.active {
+            display: block;
+        }
+
+        .language-list li {
+            padding: 5px 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .language-list li:hover {
+            background-color: #444;
+        }
+
+        .language-list a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Head First Lounge</h1>
-    <img src="drinks.gif" alt="Drinks">
-    <p>
-        Join us any evening for refreshing elixirs,
-        conversation and maybe a game or two of
-        <em>Dance Dance Revolution</em>.
-        Wireless access is always provided;
-        BYOWS (Bring your own web server).
-    </p>
-    <h2>Directions</h2>
-    <p>
-        You'll find us right in the center of downtown Webville.
-        If you need help finding us, check out our detailed directions.
-        Come join us!
-    </p>
+    <footer>
+        <div class="language-container">
+            <button class="language-btn" onclick="toggleLanguageList()">
+                English ▼
+            </button>
+            <ul class="language-list" id="languageList">
+                <li><a href="#">English</a></li>
+                <li><a href="#">Español de México</a></li>
+                <li><a href="#">Italiano</a></li>
+                <li><a href="#">Nederlands</a></li>
+                <li><a href="#">Русский</a></li>
+                <li><a href="#">繁體中文</a></li>
+                <li><a href="#">Dansk</a></li>
+                <li><a href="#">Suomi</a></li>
+                <li><a href="#">日本語</a></li>
+                <li><a href="#">Polski</a></li>
+                <li><a href="#">Svenska</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">Français (Canada)</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">Português Brasileiro</a></li>
+                <li><a href="#">Türkiye</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Français (France)</a></li>
+                <li><a href="#">Norsk (Bokmål)</a></li>
+                <li><a href="#">Português</a></li>
+                <li><a href="#">简体中文</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy and Cookies</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Trademarks</a>
+            <a href="#">About our ads</a>
+            <span>© 2025 Microsoft</span>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLanguageList() {
+            const list = document.getElementById('languageList');
+            list.classList.toggle('active');
+        }
+
+        // 点击外部关闭语言列表（可选增强）
+        window.addEventListener('click', (e) => {
+            const languageBtn = document.querySelector('.language-btn');
+            const languageList = document.getElementById('languageList');
+            if (!languageBtn.contains(e.target) && !languageList.contains(e.target)) {
+                languageList.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
