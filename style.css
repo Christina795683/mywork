@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #58D68D; /* 绿色 */
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons li {
+    width: 32px;
+    height: 32px;
+    background-color: #333; /* 图标背景模拟 */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.left-section {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.middle-section {
+    display: flex;
+    gap: 100px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-section {
+    width: 200px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.rounded-rect {
+  width: 40px;
+  height: 40px;
+  rx: 20px;
+  fill: #262423;
+}
+
+.rounded-rect {
+  width: 40px;
+  height: 40px;
+  rx: 20px;
+  fill: #262423;
+  stroke: #ffffff;
+  stroke-width: 2px;
+}
+
+.MC_globalFooterA_socialStripe-icon:hover rect,
+.MC_globalFooterA_socialStripe-icon:focus rect {
+    fill: #fa0020; /* YouTube品牌红色 */
+}
+.MC_globalFooterA_socialStripe-icon:focus {
+    outline: none; /* 移除默认焦点框 */
+}
